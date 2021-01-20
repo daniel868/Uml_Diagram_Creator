@@ -4,6 +4,7 @@
 #include "MyUserControl.h"
 #include <math.h>
 #include "DataClass.h"
+#include "MyMap.h"
 namespace UMLTest {
 
 	using namespace System;
@@ -279,7 +280,6 @@ namespace UMLTest {
 		uml_class->getClassNameTextBox()->Text = "Class" + classesList->Count;
 		uml_class->getClassNameTextBox()->Name = "TextBox" + classesList->Count;
 
-		//uml_class->Name = "Class"+ classesList->Count;
 
 		for each (Object ^ currentObj in classesList) {
 			MyUserControl^ currentClass = safe_cast<MyUserControl^>(currentObj);
@@ -458,9 +458,7 @@ namespace UMLTest {
 		}
 
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		//	contextMenuStrip1->Show(System::Windows::Forms::Control::MousePosition.X, System::Windows::Forms::Control::MousePosition.Y);
-		//	this->contextMenuStrip1->Items->Add(currentClass->getClassNameTextBox()->Text);
-
+		
 		Pen^ pen = gcnew Pen(Color::Black);
 		Graphics^ g = this->CreateGraphics();
 		g->Clear(Color::White);
@@ -496,17 +494,12 @@ namespace UMLTest {
 
 						g->DrawLine(pen, Point(x1, y1), Point(x_middle, y_middle));
 						g->DrawLine(pen2, Point(x_middle, y_middle), Point(x2, y2));
-						/*
-						g->DrawLine(pen,
-							currentClass->PointToScreen(currentClass->getClassNameTextBox()->Location),
-							currentClass2->PointToScreen(currentClass2->getClassNameTextBox()->Location));*/
-					
+						
 					}
 				}
 			}
 		};
 		
-
 	}
 	public: ArrayList^ getClassesList() {
 			return this->classesList;

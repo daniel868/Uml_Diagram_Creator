@@ -102,7 +102,7 @@ namespace UMLTest {
 
 	public:
 		Point MouseLocation;
-
+		ArrayList^ nameArrayList = gcnew ArrayList();
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -275,7 +275,7 @@ namespace UMLTest {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->Controls->Add(this->panel1);
 			this->Name = L"MyUserControl";
-			this->Size = System::Drawing::Size(352, 253);
+			this->Size = System::Drawing::Size(348, 247);
 			this->panel1->ResumeLayout(false);
 			this->groupBox3->ResumeLayout(false);
 			this->groupBox3->PerformLayout();
@@ -589,7 +589,7 @@ namespace UMLTest {
 		}
 	};
 	private: System::Void moveButton_MouseUp(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
-		//	MessageBox::Show(this->Location.X + " " + this->Location.Y);
+
 	}
 
 	public:Button^ getMoveButton() {
@@ -650,7 +650,6 @@ namespace UMLTest {
 		System::Windows::Forms::ToolStrip^ item = safe_cast<ToolStrip^>(sender);
 
 
-		//	MessageBox::Show("Clicked "+e->ClickedItem->Text);
 		bool isFound = false;
 		String^ inheritanceFrom = this->className->Text;
 		String^ inheritanceTo = e->ClickedItem->Text;
@@ -676,21 +675,14 @@ namespace UMLTest {
 		for each (Control ^ currentControl in this->Parent->Controls) {
 			if (currentControl->Name == "MyUserControl") {
 				UMLTest::MyUserControl^ cR = safe_cast<UMLTest::MyUserControl^>(currentControl);
-				// MessageBox::Show(cR->getClassNameTextBox()->Text);
 				myClasses->Add(cR);
 			}
 		}
-		//	MessageBox::Show(myClasses->Count+"");
-
+		
 		Pen^ pen = gcnew Pen(Color::Black);
 		Graphics^ g = this->Parent->CreateGraphics();
 		g->Clear(Color::White);
-		//	System::Drawing::Drawing2D::GraphicsPath^ capPath = gcnew System::Drawing::Drawing2D::GraphicsPath();
-		//	capPath->AddLine(-20, 0, 20, 0);
-			//capPath->AddLine(-20, 0, 0, 20);
-		//	capPath->AddLine(0, 20, 20, 0);
-
-			//pen->CustomEndCap = gcnew System::Drawing::Drawing2D::CustomLineCap(nullptr, capPath);
+		
 		System::Drawing::Drawing2D::AdjustableArrowCap^ head = gcnew System::Drawing::Drawing2D::AdjustableArrowCap(5, 5);
 		pen->CustomEndCap = head;
 
@@ -734,7 +726,8 @@ namespace UMLTest {
 			}
 
 		};
-		//*Deploy bug test
+		
+
 		String^ currentRow = "";
 		for each (Object ^ obj in myClasses) {
 			MyUserControl^ myClass = safe_cast<MyUserControl^>(obj);
@@ -742,25 +735,22 @@ namespace UMLTest {
 				currentRow += currentString + "\n";
 			}
 		}
-		//3MessageBox::Show(currentRow);
 
 	}
 	private: System::Void panel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 	}
 
 	private: System::Void className_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-
+		
 	}
+	
 	private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) {
 
 	}
 	private: System::Void className_Validating(System::Object^ sender, System::ComponentModel::CancelEventArgs^ e) {
 		TextBox^ thisTextBox = safe_cast<TextBox^>(sender);
 
-		//	MessageBox::Show(thisTextBox->Name);
-
-
-
+		
 		ArrayList^ umlClasses = gcnew ArrayList();
 		for each (Control ^ currentControl in this->Parent->Controls) {
 			if (currentControl->Name == "MyUserControl") {
@@ -776,6 +766,8 @@ namespace UMLTest {
 			}
 		}
 
+
+		
 		ArrayList^ maps = gcnew ArrayList();
 		for each (Object ^ currentObj in umlClasses) {
 			MyUserControl^ currentClass = safe_cast<MyUserControl^>(currentObj);
@@ -783,10 +775,7 @@ namespace UMLTest {
 			maps->Add(myMap);
 		}
 
-		for each (MyMap ^ currentMap in maps) {
-
-		}
-
+	
 		//Replace All from begin part
 		for each (Object ^ currentObj in umlClasses) {
 			MyUserControl^ currentClass = safe_cast<MyUserControl^>(currentObj);
@@ -803,35 +792,14 @@ namespace UMLTest {
 
 						String^ newString = startDestinationName + "-" + finalDestinationName;
 						newInheritannceList->Add(newString);
-					//MessageBox::Show("New Connection: " + newString);
 					}
 				}
 			}
 			currentClass->setInheritanceList(newInheritannceList);
 		}
+
 		//Replace all from end part
 		
-		for each (Object ^ currentObj in umlClasses) {
-			MyUserControl^ currentClass = safe_cast<MyUserControl^>(currentObj);
-			ArrayList^ newInheritanceList = gcnew ArrayList();
-			for each (String ^ currentString in currentClass->getInheritanceList()) {
-				String^ finalDestinationName = currentString->Substring(currentString->IndexOf('-') + 1);
-				String^ startDestinationName = currentString->Substring(0,
-					currentString->Length - finalDestinationName->Length + 1);
-				//MessageBox::Show(finalDestinationName);
-				bool destinationFound = false;
-				for each (MyMap ^ currentMap in maps) {
-					if (currentMap->getTxtBoxText() == finalDestinationName) {
-						destinationFound = true;
-					}
-				}
-				for (int i = 0; i < maps->Count; i++) {
-					MyMap^ currentMap = safe_cast<MyMap^>(maps[i]);
-							
-				}
-			
-			}
-		}
 
 
 		if (umlClasses->Count >= 1) {

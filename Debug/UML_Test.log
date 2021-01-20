@@ -1,12 +1,12 @@
 ﻿  MyForm.cpp
 C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(720,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(721,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(494,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(495,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(546,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(547,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(778,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(779,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(496,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(553,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(554,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(785,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(786,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   MyUserControl.cpp
 C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(720,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(721,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data

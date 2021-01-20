@@ -1,0 +1,6 @@
+C:\Users\danit\source\repos\UML_Test\UML_Test\Debug\UML_Test.vcxprojAssemblyReference.cache
+C:\Users\danit\source\repos\UML_Test\UML_Test\Debug\UMLTest.MyForm.resources
+C:\Users\danit\source\repos\UML_Test\UML_Test\Debug\UML_Test.vcxproj.GenerateResource.cache
+C:\Users\danit\source\repos\UML_Test\UML_Test\Debug\UMLTest.UML_FORM.resources
+C:\Users\danit\source\repos\UML_Test\UML_Test\Debug\UMLTest.MyUserControl.resources
+C:\Users\danit\source\repos\UML_Test\UML_Test\Debug\UMLTest.linie_input.resources

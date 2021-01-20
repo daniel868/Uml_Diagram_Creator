@@ -1,0 +1,2 @@
+676 212 Class0 0 0 Class1 
+301 506 Class1 0 0 

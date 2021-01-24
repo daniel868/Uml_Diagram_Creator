@@ -316,7 +316,7 @@ namespace UMLTest {
 	}
 
 		   //TODO: handle the delete button from the item class textBox
-	private: System::Void delete_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	public: System::Void delete_button_Click(System::Object^ sender, System::EventArgs^ e) {
 		//TODO: reshape the graphics object items
 		itemPosition.Y -= defaultPosition;
 		this->groupBox2->Height -= defaultPosition;
@@ -426,7 +426,7 @@ namespace UMLTest {
 	}
 
 		   //TODO: handle the delete button from the function class textBox
-	private: System::Void delete_button_Click_2(System::Object^ sender, System::EventArgs^ e) {
+	public: System::Void delete_button_Click_2(System::Object^ sender, System::EventArgs^ e) {
 		functionPosition.Y -= defaultPosition;
 		this->groupBox3->Height -= defaultPosition;
 		this->panel1->Height -= defaultPosition;
@@ -565,7 +565,7 @@ namespace UMLTest {
 
 
 	}
-
+		   
 
 	private:System::Void textBoxClick(System::Object^ sender, System::EventArgs^ e) {
 
@@ -641,6 +641,9 @@ namespace UMLTest {
 	}
 	public: void setPoint2(Point point) {
 		this->functionPosition = point;
+	}
+	public: Button^ getButton1() {
+		return this->button1;
 	}
 
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {

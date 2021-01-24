@@ -1,15 +1,15 @@
 ﻿  MyForm.cpp
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(720,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(721,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(495,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(496,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(553,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(554,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(785,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(786,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(715,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(716,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(492,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(493,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(539,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(540,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(781,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyForm.h(782,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   MyUserControl.cpp
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(720,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(721,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(715,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\danit\source\repos\UML_Test\UML_Test\MyUserControl.h(716,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   Generating Code...
   DataClass.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   UML_Test.vcxproj -> C:\Users\danit\source\repos\UML_Test\Debug\UML_Test.exe

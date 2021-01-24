@@ -652,7 +652,7 @@ private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e
 
 			loadClass->Location = Point(x, y);
 			loadClass->getClassNameTextBox()->Text = safe_cast<String^>(split2->GetValue(2));
-
+			
 			for (int i = 4; i <= 3 + itemCount * 4; i += 4) {
 				String^ yNumber = safe_cast<String^>(split2->GetValue(i + 1));
 				int x = 30;
@@ -674,6 +674,11 @@ private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e
 				loadClass->Height += 20;
 				loadClass->getMoveButton()->Top += 20;
 				itemPosition.Y += 20;
+				
+				lineInput->getXButton()->Name = "btn" + itemFunctionList->Count;
+				lineInput->getTextBox()->Name = "txt" + itemFunctionList->Count;
+				lineInput->getXButton()->Click += gcnew System::EventHandler(loadClass,&MyUserControl::delete_button_Click);
+
 
 				itemFunctionList->Add(lineInput);
 
@@ -694,6 +699,11 @@ private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e
 				lineInput->Location = Point(x, y);
 				lineInput->getTextBox()->Text = variableName;
 				lineInput->getComboBox()->Text = variableType;
+
+
+				lineInput->getTextBox()->Name = "txt" + functionList->Count;
+				lineInput->getXButton()->Name = "btn" + functionList->Count;
+				lineInput->getXButton()->Click += gcnew System::EventHandler(loadClass, &MyUserControl::delete_button_Click_2);
 
 				loadClass->getFunctionGroupBox()->Height += 20;
 				loadClass->getPanel1()->Height += 20;
@@ -785,7 +795,9 @@ private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e
 			}
 		}
 	}
-	
+	for each (MyUserControl ^ currentClass in classesList) {
+		MessageBox::Show(currentClass->getItemList()->Count+"");
+	}
 
 }
 
